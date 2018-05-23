@@ -1,0 +1,116 @@
+body {
+  background-color: whitesmoke;
+}
+
+header:hover {
+  background-color: #01020b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: #f2d47a;
+  padding: 4px;
+  box-shadow: 3px 2px 70px -23px rgba(0, 0, 0, 0.75);
+}
+
+.card p {
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: inset 0px 0px 66px -4px rgba(65, 82, 71, 0.41);
+}
+
+.img-fit {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+footer {
+  background-color: seashell
+}
+
+.section {
+  margin: 30px;
+  text-align: center;
+}
+
+.navi {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav>li:after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid transparent;
+  transition: ease .25s;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.navbar-nav>li:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  border-bottom: 5px solid #f2d47a;
+}
+
+a h3 {
+  color: #f2d47a;
+  text-shadow: rgba(255, 255, 255, 0.4)
+}
+
+li a {
+  color: #f2d47a;
+}
+
+.greenline {
+  background-color: #f2d47a;
+  height: 15px;
+}
+
+#footData {
+  background-color: rgb(50, 50, 50);
+}
+
+.page-footer {
+  margin: 0;
+}
+
+.cart {
+  margin-top: 100px;
+}
+
+.buyBtn a {
+  color: rgb(66, 244, 134);
+}
+
+.footer-content {
+  color: white;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content h6 {
+  color: #f2d47a;
+}
+
+.header-carrousel {
+  width: 100%;
+  height: 300px;
+}
+
+.startingPage {
+  margin-top: 67px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+/* =================== */

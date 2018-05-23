@@ -1,0 +1,393 @@
+
+.category-title {
+  margin-top: 30px;
+}
+
+.navbar {
+  margin-bottom:0 !important;
+  background-color: #00979d !important;
+}
+
+#navbarDropdown{
+  color: white;
+  font-family: Lucida Grande;
+}
+
+#navbarDropdown2{
+  color: white;
+  font-family: Lucida Grande;
+}
+
+.scrolled-nav #title-image {
+ height: 40px;
+ width: auto;
+}
+
+#title-image2 {
+ display: inline-block;
+ -webkit-transition: all .5s;
+  transition: all .5s;
+  height: 70px;
+  width: auto;
+}
+
+
+@media only screen and (max-width: 766px) {
+  #title-image {
+   display: inline-block;
+   -webkit-transition: all .5s;
+    transition: all .5s;
+    height: 70px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  #carouselHeader {
+    margin-top: 95px;
+  }
+}
+
+
+
+@media only screen and (min-width: 767px) {
+  #title-image {
+   display: inline-block;
+   -webkit-transition: all .5s;
+    transition: all .5s;
+    height: 100px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  #carouselHeader {
+    margin-top: 125px;
+  }
+}
+
+
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #00696d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+#dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+#dropdown-content a:hover {
+  background-color: #99d5d7;
+  color:#00696d;
+}
+
+#dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #00696d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+#dropdown-content2 a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+#dropdown-content2 a:hover {
+  background-color: #99d5d7;
+  color:#00696d;
+}
+
+#dropdown2:hover #dropdown-content2 {
+  display: block;
+}
+
+#navbar-header li:hover {
+  background-color: #99d5d7;
+  /* color:white; */
+}
+
+.btn-search {
+  background-color: white;
+  color:#00979d !important;
+  border-radius: 0 !important;
+}
+
+/* Show the dropdown menu on hover */
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+
+#search-bar{
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  background-color: #99d5d7;
+  color:#00696d !important;
+  border-radius: 0 !important;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+}
+
+/* When the input field gets focus, change its width to 100% */
+#search-bar:focus {
+  width: 250px;
+}
+
+
+.scrolled-nav {
+ /* height: 60px !important; */
+ /* line-height: 60px !important; */
+}
+
+.navbar a {
+  color: white;
+}
+
+#product {
+  margin-top: 40px;
+}
+
+.card {
+  margin: 20px;
+}
+
+
+
+footer {
+  background-color: #00979d !important;
+  color: white;
+  line-height: 0.8;
+}
+
+footer a{
+  color: #99d5d7;
+}
+
+#social-medial li:hover{
+  color: #00696d;
+}
+
+#social-medial .fa{
+  font-size:30px;
+}
+
+#btn-collapse {
+  /* background-color: black; */
+  /* box-shadow: 10px 10px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-toggler-icon {
+  color: white; !important;
+  margin-top: 35%;
+  font-size: 30px;
+}
+
+.card{
+  border: 0px !important;
+}
+
+.card p {
+  margin-bottom: 0px;
+}
+
+.card h5 {
+  color: #00696d;
+}
+
+.overlay {
+ position: absolute;
+ bottom: 100%;
+ left: 0;
+ right: 0;
+ background-color: #00979d;
+ opacity: 0.95;
+ overflow: hidden;
+ width: 100%;
+ height:0;
+ transition: .3s ease;
+}
+
+.card:hover .overlay {
+ bottom: 0;
+ height: 100%;
+}
+
+.text {
+ color: white ;
+ font-size: 14px;
+ position: absolute;
+ padding: 30px;
+ /* text-align: center; */
+}
+
+@media only screen and (min-width: 767px) {
+  .card {
+    width: 20rem;
+  }
+}
+
+/* @media only screen and (max-width: 992px) {
+  .text {
+    font-size: 13px;
+  }
+} */
+
+.text h5 {
+  color:white;
+}
+
+#btn-buy{
+  margin-top: 10%;
+  color:white;
+  background-color: #f39c12;
+  box-shadow: 0 4px #d35400;
+  border-radius: 2px 2px 0 0;
+  transition: all .2s;
+}
+
+#btn-buy:hover{
+  margin-top: 10%;
+  /* background-color: #EEB314; */
+  box-shadow: 0 1px #d35400;
+  transform: translateY(4px);
+}
+
+.card-body #btn-buy {
+  margin-top:0;
+}
+
+.badge {
+  background-color: white;
+  border-radius: 10px;
+  color: #00979d;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+#stocks {
+  background-color: #00979d;
+  color: white;
+  margin-left: 80%;
+  padding: 2px;
+  font-size: 10px;
+}
+
+#stock-empty {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  color: white;
+  padding: 25px;
+  font-size: 25px;
+}
+
+/* .overlay p {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 992px) {
+  table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+
+	table#cart thead { display: none; }
+	table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+
+
+
+	table#cart tfoot td{display:block; }
+	table#cart tfoot td .btn{display:block;}
+
+}
+
+.modal-header {
+  background-color: #00979d !important;
+  color: white;
+
+}
+
+#filedrag
+{
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	padding: 5em 0;
+	margin: 1em 0;
+	color: #555;
+	border: 2px dashed #555;
+	border-radius: 7px;
+	cursor: default;
+}
+
+.file-there
+{
+	padding: 1em 0 !important;
+}
+
+#previewImage {
+  height: 15em;
+}
+
+#filedrag.hover
+{
+	color: #f00;
+	border-color: #f00;
+	border-style: solid;
+	box-shadow: inset 0 3px 4px #888;
+}

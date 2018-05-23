@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Travey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <head-comp :cart="cart" :role="role"></head-comp>
+    <div class="greenline startingPage"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6 mt-4 cardBox" v-for="store in stores">
+          <div class="card">
+            <img class="img-fit" alt="image not found" v-bind:src="store.imageUrl">
+              <p class="card-title mt-2" style="font-size: 12px;">{{getName(store.name)}}</p>
+              <p class="text-right mb-0 text-justify">{{pricing(store.price)}}</p>
+              <small class="text-right mb-0 text-justify">Stock: {{store.stock}}</small>
+            <button type="button" class="btn btn-success btn-sm" v-on:click="addToCart(store)" v-if="store.stock">Buy</button>
+            <button type="button" class="btn btn-danger btn-sm" v-else>Sold Out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <foot-comp></foot-comp>
+    <cart-comp :cart="cart" :stores="stores" :pricing="pricing" @updatestores="setstores" @updatecart="setCart">
+    </cart-comp>
+    <login-comp></login-comp>
+    <new-item-comp></new-item-comp>
+    <register-comp></register-comp>
+  </div>
+  <script src="./components/cart.js"></script>
+  <script src="./components/headernav.js"></script>
+  <script src="./components/footer.js"></script>
+  <script src="./components/register.js"></script>
+  <script src="./components/login.js"></script>
+  <script src="./components/new-item.js"></script>
+  <script src="./components/vue.js"></script>
+</body>
+
+</html>
