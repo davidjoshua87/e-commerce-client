@@ -76,7 +76,7 @@ Vue.component('register-comp', {
 
   methods: {
     register: function () {
-      axios.post('http://localhost:3000/users', {
+      axios.post('http://35.198.216.59/users', {
           first_name: this.email,
           last_name: this.last_name,
           email: this.email,
@@ -85,7 +85,7 @@ Vue.component('register-comp', {
         .then(({
           data
         }) => {
-          axios.post('http://localhost:3000/', {
+          axios.post('http://35.198.216.59/login', {
               email: this.email,
               password: this.password
             })

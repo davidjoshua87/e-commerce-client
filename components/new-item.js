@@ -87,7 +87,7 @@ Vue.component('new-item-comp', {
       formData.append('price', this.price)
       formData.append('stock', this.stock)
 
-      axios.post('http://localhost:3000/items/img', formData, {
+      axios.post('http://35.198.216.59/items/img', formData, {
           headers: {
             apptoken: localStorage.getItem('apptoken')
           }
